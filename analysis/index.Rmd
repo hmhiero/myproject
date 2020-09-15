@@ -11,6 +11,8 @@ editor_options:
 Welcome to my qbio6 website. Enjoy some teeth data.
 
 
-##Link to my analysis
+## Link to my analysis
+
 * [Teeth growth analysis](teeth.html)
+
 * [Check out the other zebrafish websites](https://hmhiero.github.io/myproject/index.html)
