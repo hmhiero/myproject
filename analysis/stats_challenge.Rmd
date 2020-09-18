@@ -83,7 +83,9 @@ for (i in seq(1,length(dates))){
 ```
 
 
-##Visualizing our result
+
+## Visualizing our result
+
 
 Plotting the data as a scatterplot, we can see that the correlation between country name length and covid cases is likely due to a large number of short-named countries having very few cases. There certainly is no causal reason for COVID cases to be higher in counties with shorter names, as the country name does not incluence factors like mask-wearing, social distancing, international travel, or ACE2 expression. While intuitively name length has no connection to variables known to control for covid spread, it could be plausible that there is a correlation, due to counties from certain regions having similarities in language and therefore name length, as well as closeness geographically leading to more frequent travel, and therefore, virus presence being similar amongst these nations. To verify that we have indeed hacked the p-value through excessive testing of combinations of variables rather than detecting a correlation we plotted the country name length and COVID cases by country. It is apparent that there is no underlying correlation in country name and COVID spread. Additionally, out of the 263 dates tested, we found 4 significant dates. This is well within the expected number of false positive results and when considering potential corrections, like  Bonferroni, we see for the 4 dates in question the p-values shift from (0.00748, 0.00687, 0.00976, 0.01310) to (1, 1, 1, 1).
 
