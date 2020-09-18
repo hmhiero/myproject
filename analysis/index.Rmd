@@ -16,3 +16,5 @@ Welcome to my qbio6 website. Enjoy some teeth data.
 * [Teeth growth analysis](teeth.html)
 
 * [Check out the other zebrafish websites](https://redwings1210.github.io/myproject/)
+
+* [Stats Challenge](stats_challenge.html)
