@@ -394,7 +394,7 @@ div.tocify {
 
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
-<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span>
+<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
 </button>
 </p>
 <div id="workflowr-report" class="collapse">
@@ -403,7 +403,7 @@ div.tocify {
 <a data-toggle="tab" href="#summary">Summary</a>
 </li>
 <li>
-<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> </a>
+<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> </a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -415,7 +415,7 @@ div.tocify {
 <strong>Last updated:</strong> 2020-09-18
 </p>
 <p>
-<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 1
+<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
 </p>
 <p>
 <strong>Knit directory:</strong> <code>myproject/</code> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="This is the local directory in which the code in this file was executed."> </span>
@@ -431,12 +431,12 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges"> <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted changes </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date </a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguncommittedchanges" class="panel-collapse collapse">
+<div id="strongRMarkdownfilestronguptodate" class="panel-collapse collapse">
 <div class="panel-body">
-<p>The R Markdown file has unstaged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
+<p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
 </div>
 </div>
 </div>
@@ -503,16 +503,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomhmhieromyprojecttree3d27894ed29166cef0799ebe7d54223d03358c25targetblank3d27894a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/hmhiero/myproject/tree/3d27894ed29166cef0799ebe7d54223d03358c25" target="_blank">3d27894</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomhmhieromyprojecttree686100d90ffe58f513affc2cadf6070364570d97targetblank686100da"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/hmhiero/myproject/tree/686100d90ffe58f513affc2cadf6070364570d97" target="_blank">686100d</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomhmhieromyprojecttree3d27894ed29166cef0799ebe7d54223d03358c25targetblank3d27894a" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomhmhieromyprojecttree686100d90ffe58f513affc2cadf6070364570d97targetblank686100da" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/hmhiero/myproject/tree/3d27894ed29166cef0799ebe7d54223d03358c25" target="_blank">3d27894</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/hmhiero/myproject/tree/686100d90ffe58f513affc2cadf6070364570d97" target="_blank">686100d</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -521,9 +521,6 @@ Note that you need to be careful to ensure that all relevant files for the analy
 Ignored files:
     Ignored:    .Rhistory
     Ignored:    .Rproj.user/
-
-Unstaged changes:
-    Modified:   analysis/stats_challenge.Rmd
 
 </code></pre>
 <p>
@@ -562,6 +559,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/hmhiero/myproject/blob/686100d90ffe58f513affc2cadf6070364570d97/analysis/stats_challenge.Rmd" target="_blank">686100d</a>
+</td>
+<td>
+Hanna
+</td>
+<td>
+2020-09-18
+</td>
+<td>
+wflow_git_commit(all = TRUE)
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/hmhiero/myproject/686100d90ffe58f513affc2cadf6070364570d97/docs/stats_challenge.html" target="_blank">686100d</a>
+</td>
+<td>
+Hanna
+</td>
+<td>
+2020-09-18
+</td>
+<td>
+wflow_git_commit(all = TRUE)
+</td>
+</tr>
 <tr>
 <td>
 html
@@ -782,7 +813,7 @@ attached base packages:
 other attached packages:
  [1] ggrepel_0.8.2   cowplot_1.1.0   forcats_0.5.0   stringr_1.4.0  
  [5] purrr_0.3.4     readr_1.3.1     tidyr_1.1.2     tibble_3.0.3   
- [9] ggplot2_3.3.2   tidyverse_1.3.0 dplyr_1.0.2    
+ [9] ggplot2_3.3.2   tidyverse_1.3.0 dplyr_1.0.2     workflowr_1.6.2
 
 loaded via a namespace (and not attached):
  [1] tidyselect_1.1.0 xfun_0.17        haven_2.3.1      colorspace_1.4-1
@@ -790,16 +821,16 @@ loaded via a namespace (and not attached):
  [9] blob_1.2.1       rlang_0.4.7      later_1.1.0.1    pillar_1.4.6    
 [13] withr_2.2.0      glue_1.4.2       DBI_1.1.0        dbplyr_1.4.4    
 [17] modelr_0.1.8     readxl_1.3.1     lifecycle_0.2.0  munsell_0.5.0   
-[21] gtable_0.3.0     workflowr_1.6.2  cellranger_1.1.0 rvest_0.3.6     
-[25] evaluate_0.14    labeling_0.3     knitr_1.29       httpuv_1.5.4    
-[29] fansi_0.4.1      broom_0.7.0      Rcpp_1.0.4.6     promises_1.1.1  
-[33] backports_1.1.9  scales_1.1.1     jsonlite_1.7.1   farver_2.0.3    
-[37] fs_1.5.0         hms_0.5.3        digest_0.6.25    stringi_1.5.3   
-[41] rprojroot_1.3-2  grid_4.0.2       cli_2.0.2        tools_4.0.2     
-[45] magrittr_1.5     crayon_1.3.4     whisker_0.4      pkgconfig_2.0.3 
-[49] ellipsis_0.3.1   xml2_1.3.2       reprex_0.3.0     lubridate_1.7.9 
-[53] assertthat_0.2.1 rmarkdown_2.3    httr_1.4.2       rstudioapi_0.11 
-[57] R6_2.4.1         git2r_0.27.1     compiler_4.0.2  </code></pre>
+[21] gtable_0.3.0     cellranger_1.1.0 rvest_0.3.6      evaluate_0.14   
+[25] labeling_0.3     knitr_1.29       httpuv_1.5.4     fansi_0.4.1     
+[29] broom_0.7.0      Rcpp_1.0.4.6     promises_1.1.1   backports_1.1.9 
+[33] scales_1.1.1     jsonlite_1.7.1   farver_2.0.3     fs_1.5.0        
+[37] hms_0.5.3        digest_0.6.25    stringi_1.5.3    rprojroot_1.3-2 
+[41] grid_4.0.2       cli_2.0.2        tools_4.0.2      magrittr_1.5    
+[45] crayon_1.3.4     whisker_0.4      pkgconfig_2.0.3  ellipsis_0.3.1  
+[49] xml2_1.3.2       reprex_0.3.0     lubridate_1.7.9  assertthat_0.2.1
+[53] rmarkdown_2.3    httr_1.4.2       rstudioapi_0.11  R6_2.4.1        
+[57] git2r_0.27.1     compiler_4.0.2  </code></pre>
 </div>
 </div>
 
